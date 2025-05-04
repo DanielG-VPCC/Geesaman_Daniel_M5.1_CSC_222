@@ -44,6 +44,7 @@ void test3()
 {
     cout << "test team leader object" << endl << endl;
     TeamLeader tLeader{"Charlie", 112, "1 Apr 1923", 1, 1400, 1300, 10, 42};
+    tLeader.printTeamLeader();
     cout << endl;
 }
 
