@@ -10,7 +10,6 @@ private:
 	string hireDate;
 public:
 	//create one or more constructors
-	Employee();
 	Employee(string n, int e, string h);
 	//provide accessor (get) and mutator (set) functions
 	string getName();

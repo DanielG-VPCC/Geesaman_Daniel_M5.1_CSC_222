@@ -3,11 +3,6 @@
 #include <string>
 using namespace std;
 
-ShiftSupervisor::ShiftSupervisor() : Employee() 
-{
-
-}
-
 double ShiftSupervisor::getAnnualSalary()
 {
 	return annualSalary;
@@ -30,5 +25,7 @@ void ShiftSupervisor::setAnnualProductionBonus(double j)
 
 void ShiftSupervisor::printShiftSupervisor()
 {
-
+	cout << "Annual salary: $" << annualSalary << endl;
+	cout << "Annual production bonus: $" << annualProductionBonus << endl;
+	printEmployee();
 }

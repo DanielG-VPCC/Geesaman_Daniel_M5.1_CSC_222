@@ -3,11 +3,6 @@
 #include <string>
 using namespace std;
 
-TeamLeader::TeamLeader() : ProductionWorker() 
-{
-
-}
-
 double TeamLeader::getMonthlyBonus()
 {
 	return monthlyBonus;
@@ -40,5 +35,8 @@ void TeamLeader::setAttendTrainHrs(int k)
 
 void TeamLeader::printTeamLeader()
 {
-
+	cout << "Monthly bonus: $" << monthlyBonus << endl;
+	cout << "Required training hours: " << reqTrainHrs << endl;
+	cout << "Attended training hours: " << attendTrainHrs << endl;
+	printProductionWorker();
 }

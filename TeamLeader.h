@@ -10,7 +10,13 @@ private:
 	int attendTrainHrs;
 public:
 	//use initalizer lists to initialize ProductionWorker and Employee parts
-	TeamLeader() : ProductionWorker() {};
+	TeamLeader(string n, int e, string h, int s, double hrPay, double mB, int rTH, int aTH) : ProductionWorker(n, e, h, s, hrPay) 
+	{
+		monthlyBonus = mB;
+		reqTrainHrs = rTH;
+		attendTrainHrs = aTH;
+		ProductionWorker pworker(n, e, h, s, hrPay);
+	};
 	//provide appropriate accessors and mutators
 	double getMonthlyBonus();
 	int getReqTrainHrs();

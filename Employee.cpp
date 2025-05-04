@@ -3,14 +3,11 @@
 #include <iostream>
 using namespace std;
 
-Employee::Employee()
-{
-
-}
-
 Employee::Employee(string n, int e, string h)
 {
-
+	name = n;
+	employeeNum = e;
+	hireDate = h;
 }
 
 string Employee::getName()
@@ -45,5 +42,7 @@ void Employee::setHireDate(string h)
 
 void Employee::printEmployee()
 {
-
+	cout << "Employee name: " << name << endl;
+	cout << "Employee number: " << employeeNum << endl;
+	cout << "Employee hire date: " << hireDate << endl;
 }

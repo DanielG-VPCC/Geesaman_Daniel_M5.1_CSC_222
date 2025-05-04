@@ -9,7 +9,12 @@ private:
 	double annualProductionBonus;
 public:
 	//implement constructors
-	ShiftSupervisor() : Employee() {};
+	ShiftSupervisor(string n, int e, string h, double aS, double aPB) : Employee(n, e, h) 
+	{
+		annualSalary = aS;
+		annualProductionBonus = aPB;
+		Employee worker(n, e, h);
+	};
 	//accessors and mutators
 	double getAnnualSalary();
 	double getAnnualProductionBonus();

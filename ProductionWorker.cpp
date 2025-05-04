@@ -3,11 +3,6 @@
 #include <string>
 using namespace std;
 
-ProductionWorker::ProductionWorker() : Employee() 
-{
-
-}
-
 int ProductionWorker::getShift()
 {
 	return shift;
@@ -30,5 +25,23 @@ void ProductionWorker::setHourlyPayRate(int j)
 
 void ProductionWorker::printProductionWorker()
 {
+	cout << "Shift: " << dayOrNight() << endl;
+	cout << "Hourly pay rate: $" << hourlyPayRate << endl;
+	printEmployee();
+}
 
+string ProductionWorker::dayOrNight()
+{
+	if (shift == 1)
+	{
+		return "day";
+	}
+	else if (shift == 0)
+	{
+		return "night";
+	}
+	else
+	{
+		return 0;
+	}
 }
